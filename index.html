@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/styles.css" />
+
+    <title>NavBar</title>
+  </head>
+  <body>
+    <header>
+      <form action="/submit-form" method="GET">
+        <figure>
+          <img src="img/logodf.svg" class="logo" alt="logo difatec" />
+        </figure>
+        <div>
+          <input type="text" placeholder="Buscar" />
+          <button type="submit" value="Enviar">Buscar</button>
+        </div>
+      </form>
+    </header>
+    <div class="container">
+      <nav>
+        <ul>
+          <li><a href="#section1">INICIO</a></li>
+          <li>
+            <a href="#section2">PRODUCTOS</a>
+            <ul class="sub-menu">
+              <li><a href="#">LÍNEA FRÍO</a></li>
+              <li class="open-sub-submenu">
+                <a href="#">LÍNEA CALOR</a>
+                <ul class="sub-menu2">
+                  <li><a href="#">HORNOS</a></li>
+                  <li><a href="#">FREIDORAS</a></li>
+                  <li><a href="#">COCINAS</a></li>
+                  <li><a href="#">CARLITEROS</a></li>
+                  <li><a href="#">PLANCHAS</a></li>
+                  <li><a href="#">PARRILLAS</a></li>
+                  <li><a href="#">ANAFES</a></li>
+                </ul>
+              </li>
+              <li><a href="#">CÁMARAS FRIGORÍFICAS</a></li>
+              <li><a href="#">CÁRNICOS</a></li>
+              <li><a href="#">PANIFICADOS</a></li>
+            </ul>
+          </li>
+          <li><a href="#section3">CONTACTO</a></li>
+          <li><a href="#section3">QUIÉNES SOMOS</a></li>
+        </ul>
+      </nav>
+      <div class="slider">
+        <div class="slide">
+          <img src="img/bateas.jpg" alt="Imagen 1" />
+        </div>
+        <div class="slide">
+          <img src="img/tortera.jpg" alt="Imagen 2" />
+        </div>
+        <div class="slide">
+          <img src="img/vitrina2.jpg" alt="Imagen 2" />
+        </div>
+      </div>
+    </div>
+    <a class="wsap" href="https://api.whatsapp.com/send?phone=+5491126714420">
+      <img src="img/wp.png" alt="logo-wsap" />
+    </a>
+    <footer>
+      <div class="container">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d1403.8530472533388!2d-122.4194155!3d37.7749295!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xdefbce2600e86efa!2sEmbarcadero+Center!5e0!3m2!1sen!2sus!4v1412730202787"
+          width="100%"
+          height="350"
+          frameborder="0"
+          style="border: 0"
+        ></iframe>
+      </div>
+      <p>Copyright &copy; 2023 SDeveloperZ</p>
+    </footer>
+    <script src="js/main.js"></script>
+  </body>
+</html>
