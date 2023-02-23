@@ -26,7 +26,7 @@ body {
   top: 15px;
 }
 
-header form {
+.search {
   width: 100%;
   text-align: center;
   padding: 1rem;
@@ -58,11 +58,10 @@ header form button[type="submit"] {
 
 nav {
   width: 100%;
-  padding: 35px 0;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  height: 50px;
+  height: 3em;
   background-color: black;
 }
 
@@ -148,7 +147,7 @@ nav ul li ul li:hover .sub-menu2 {
 }
 
 .slide img {
-  width: 100v w;
+  width: 100vw;
   height: 100%;
 }
 
@@ -181,7 +180,6 @@ footer {
 footer .pie {
   display: flex;
   align-items: center;
-
   justify-content: center;
 }
 
