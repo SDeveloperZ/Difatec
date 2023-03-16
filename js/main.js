@@ -30,3 +30,21 @@ function showSlides() {
 }
 
 showSlides();
+
+const fila = document.querySelector(".fila");
+const scrollLeftBtn = document.querySelector(".scroll-left");
+const scrollRightBtn = document.querySelector(".scroll-right");
+
+scrollLeftBtn.addEventListener("click", () => {
+  fila.scrollBy({
+    left: -400,
+    behavior: "smooth",
+  });
+});
+
+scrollRightBtn.addEventListener("click", () => {
+  fila.scrollBy({
+    left: 400,
+    behavior: "smooth",
+  });
+});
