@@ -194,14 +194,14 @@ nav ul li ul li:hover .sub-menu2 {
 
 .fila.grid {
   position: relative;
-  margin: 50px;
+  margin: 25px;
   display: flex;
   scroll-snap-align: start;
 }
 
 .card {
   width: 360px;
-  background-color: rgba(255, 255, 255, 0.479);
+  background-color: rgba(255, 255, 255, 0.151);
   border-radius: 0.5rem;
   box-shadow: 2px 2px 4px rgb(48, 47, 47);
   flex-shrink: 0;
@@ -212,11 +212,13 @@ nav ul li ul li:hover .sub-menu2 {
 .card img {
   height: 320px;
   max-width: 100%;
+  transition: opacity 400ms ease-in-out;
+  cursor: pointer;
 }
 
 .card .footer-card {
   clip-path: polygon(0 0%, 100% 15%, 100% 100%, 0 100%);
-  background-color: #1b7888c0;
+  background-color: #003a69c0;
   padding: 0.8rem;
   width: 100%;
   height: 174px;
@@ -224,6 +226,11 @@ nav ul li ul li:hover .sub-menu2 {
   flex-direction: column;
   justify-content: space-between;
   align-items: flex-start;
+}
+
+.card:hover {
+  background-color: rgba(223, 223, 223, 0.986);
+  transition: 400ms ease-in-out all;
 }
 
 .card .footer-card p {
@@ -244,8 +251,12 @@ nav ul li ul li:hover .sub-menu2 {
   align-self: center;
 }
 .card .footer-card a:hover {
-  background-color: #664626;
+  background-color: #0c2f7a;
   transition: 400ms ease-in-out all;
+}
+
+a {
+  text-decoration: none;
 }
 
 .promos {
@@ -260,14 +271,18 @@ img.promodeizq {
   padding: 10px;
 }
 
+img {
+  filter: brightness(80%);
+  transition: 400ms ease-in-out all;
+}
+
+img:hover {
+  filter: brightness(100%);
+}
+
 img.promodeder {
   max-width: 100%;
   padding: 10px;
-}
-
-img.promodeder:hover {
-  background-color: #fff; /* color de fondo del cartel al pasar el cursor sobre él */
-  color: #333; /* color del texto del cartel al pasar el cursor sobre él */
 }
 
 /*Barra info*/
@@ -281,7 +296,7 @@ img.promodeder:hover {
 .imgidea {
   border-radius: 10px;
   width: 100%;
-  margin-top: -15px;
+  margin-bottom: 2rem;
 }
 /*boton wsap*/
 
@@ -320,4 +335,9 @@ footer .pie {
 footer iframe {
   width: 100%;
   max-width: 450px;
+}
+
+.copy {
+  padding-top: 0.5em;
+  text-align: center;
 }
