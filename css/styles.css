@@ -2,11 +2,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Anton&family=Bebas+Neue&family=DM+Sans&family=League+Spartan&family=Lobster&family=Montserrat&family=Trade+Winds&display=swap");
 
 * {
-  vertical-align: baseline;
-  font-weight: inherit;
-  font-size: 100%;
-  border: 0 none;
-  outline: 0;
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -160,8 +155,7 @@ nav ul li ul li:hover .sub-menu2 {
 
 .fila {
   display: flex;
-  overflow-x: hidden;
-  scroll-behavior: smooth;
+  padding: 2rem 1rem;
 }
 
 .fila::-webkit-scrollbar {
@@ -317,7 +311,16 @@ img.promodeder {
 }
 
 /* Quienes Somos */
+div {
+  display: block;
+}
 
+p {
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+}
 /* Footer */
 
 footer {
@@ -325,19 +328,62 @@ footer {
   color: white;
   padding: 10px 0;
 }
+.col-33 {
+  width: 33.33333%;
+  padding: 0.5rem 1rem;
+}
 
-footer .pie {
+.col-66 {
+  width: 100%;
+  padding: 0.5rem 1rem;
+  text-align: center;
+}
+
+footer p {
+  color: rgba(255, 255, 255, 0.8);
+}
+.flex-start {
   display: flex;
   align-items: center;
-  justify-content: center;
+  padding-left: 5rem;
+}
+.m-r-small {
+  margin-right: 0.5rem;
 }
 
-footer iframe {
-  width: 100%;
-  max-width: 450px;
+.flex-around {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
 }
 
-.copy {
-  padding-top: 0.5em;
+.m-t {
+  margin-top: 1rem;
+}
+
+footer p:first-child {
+  color: #1578b1;
+  font-weight: bold;
+}
+
+/*Redes Sociales*/
+
+footer img.rrss {
+  height: 48px;
+}
+
+footer a {
+  font-size: 0.8rem;
+  color: #1578b1;
+  transition: 400ms ease-in-out all;
+}
+footer a:hover {
+  font-size: 0.8rem;
+  color: #929baf;
+}
+footer .copyright {
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 0.8rem;
   text-align: center;
+  overflow: hidden;
 }
