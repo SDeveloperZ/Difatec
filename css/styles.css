@@ -47,8 +47,6 @@ header form input[type="text"] {
 
 header form button[type="submit"] {
   padding: 10px 20px;
-  background-color: #060606;
-  color: white;
   border: none;
   border-radius: 3px;
   font-size: 16px;
@@ -154,6 +152,8 @@ nav ul li ul li:hover .sub-menu2 {
 /* grid  */
 
 .fila {
+  overflow-x: hidden;
+  scroll-behavior: smooth;
   display: flex;
   padding: 2rem 1rem;
 }
@@ -237,7 +237,7 @@ nav ul li ul li:hover .sub-menu2 {
 }
 
 .card .footer-card a {
-  background-color: #1547b1;
+  background-color: #060606;
   color: white;
   font-size: 0.8rem;
   border-radius: 0.3em;
@@ -347,6 +347,18 @@ footer p {
   align-items: center;
   padding-left: 5rem;
 }
+
+.flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.flex-end {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
 .m-r-small {
   margin-right: 0.5rem;
 }
@@ -386,4 +398,134 @@ footer .copyright {
   font-size: 0.8rem;
   text-align: center;
   overflow: hidden;
+}
+
+/* Formulario contacto */
+
+.fila.contacto {
+  margin-top: 30px;
+  flex-direction: column;
+  align-items: center;
+}
+
+.flex-colum-center {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+form.contacto {
+  width: 50%;
+}
+
+/*Para tablet*/
+@media (max-width: 720px) {
+  form.contacto {
+    width: 75%;
+  }
+}
+/*Para moviles*/
+@media (max-width: 440px) {
+  form.contacto {
+    width: 100%;
+  }
+}
+
+form.contacto .fila {
+  padding: 0.8rem;
+}
+
+input {
+  border: none; /*Quitamos los bordes*/
+  border-bottom: 1.5px solid #10bac0; /*Añadimos un subrayado bajo el texto*/
+  font-size: 1rem;
+  padding: 0.5em 1em;
+  width: 100%;
+}
+
+/* cambiamos el estilo al seleccionar el cuadro */
+input:focus {
+  outline: none;
+  border-bottom: 1.5px solid #0c2f7a;
+}
+
+/* cambiamos el estilo del usuario y el mail en el cuadro*/
+input.usuario {
+  background-image: url(../img/user.svg);
+  background-repeat: no-repeat;
+  background-position: 0 7px;
+  padding-left: 2em;
+}
+
+input.email {
+  background-image: url(../img/mail-bronce.svg);
+  background-repeat: no-repeat;
+  background-position: 0 7px;
+  padding-left: 2em;
+}
+
+button {
+  border: none;
+  background-color: #060606;
+  color: white;
+  font-size: 1rem;
+  font-weight: normal;
+  padding: 0.5em 1em;
+  border-radius: 0.3em;
+  cursor: pointer;
+  transition: all ease-in-out 400ms;
+}
+
+button:hover {
+  background-color: #0c2f7a;
+}
+
+input[type="checkbox"] {
+  display: none;
+}
+input[type="checkbox"] + label::before {
+  content: url(../img/square.svg);
+  position: relative;
+  top: 5px;
+  padding-right: 5px;
+}
+
+/*se agrega :checked para cuando esta el tilde puesto*/
+input[type="checkbox"]:checked + label::before {
+  content: url(../img/check-square.svg);
+}
+
+/* quienes somos */
+
+#quienes-somos {
+  background-color: #f5f5f5;
+  padding: 40px;
+}
+
+#quienes-somos h2 {
+  font-size: 32px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+#quienes-somos p {
+  font-size: 18px;
+  line-height: 1.5;
+  margin-bottom: 20px;
+}
+
+#quienes-somos ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+#quienes-somos ul li {
+  font-size: 18px;
+  line-height: 1.5;
+  margin-bottom: 10px;
+}
+
+#quienes-somos ul li strong {
+  font-weight: bold;
 }

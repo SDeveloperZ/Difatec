@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css">
+    <title>Contacto</title>
+</head>
+<body>
+    <header>
+        <form action="/submit-form" method="GET">
+          <figure>
+            <img src="img/logodf.svg" class="logo" alt="logo difatec" />
+          </figure>
+          <div class="search">
+            <input type="text" placeholder="Buscar" />
+            <button type="submit" value="Enviar">Buscar</button>
+          </div>
+        </form>
+    </header>
+      <div class="container">
+        <!-- submenus -->
+        <nav>
+          <ul>
+            <li><a href="index.html">INICIO</a></li>
+            <li>
+              <a href="#section2">PRODUCTOS</a>
+              <ul class="sub-menu">
+                <li><a href="#">LÍNEA FRÍO</a></li>
+                <li class="open-sub-submenu">
+                  <a href="#">LÍNEA CALOR</a>
+                  <ul class="sub-menu2">
+                    <li><a href="#">HORNOS</a></li>
+                    <li><a href="#">FREIDORAS</a></li>
+                    <li><a href="#">COCINAS</a></li>
+                    <li><a href="#">CARLITEROS</a></li>
+                    <li><a href="#">PLANCHAS</a></li>
+                    <li><a href="#">PARRILLAS</a></li>
+                    <li><a href="#">ANAFES</a></li>
+                  </ul>
+                </li>
+                <li><a href="#">CÁMARAS FRIGORÍFICAS</a></li>
+                <li><a href="#">CÁRNICOS</a></li>
+                <li><a href="#">PANIFICADOS</a></li>
+              </ul>
+            </li>
+            <li><a href="contacto.html">CONTACTO</a></li>
+            <li><a href="somos.html">QUIÉNES SOMOS</a></li>
+          </ul>
+        </nav>
+    <div class="fila contacto">
+        <div class="col-100 flex-colum-center">
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eum, cupiditate.</p>
+                <form class="contacto">
+                    <div class="fila">
+                        <input class="usuario" type="text" placeholder="Nombre y Apellido">
+                    </div>
+                    <div class="fila">
+                        <input class="email" type="email" placeholder="Correo Electronico">
+                    </div>
+                    <div class="fila flex-end">
+                        <button type="submit">Enviar</button>
+                    </div>
+                    <div class="fila flex-center">
+                        <input type="checkbox" id="condiciones">
+                        <label for="condiciones">
+                            Acepto las condiciones legales.
+                        </label>
+                    </div>
+                </form>
+        </div>
+    </div>
+    
+    <a class="wsap" href="https://api.whatsapp.com/send?phone=+5491126714420">
+        <img src="img/wp.png" alt="logo-wsap" />
+      </a>
+    <footer class="fila">
+            <div class="col-33">
+              <p class="flex-start">Difatec Equipamientos Comerciales</p>
+              <p class="flex-start">
+                <img class="m-r-small" src="img/map.svg" alt="icono de mapa" />
+                Av. Pisani 1748
+              </p>
+              <p class="flex-start">1888 Santa Rosa</p>
+              <p class="flex-start">
+                <img class="m-r-small" src="img/phone.svg" alt="icono de telefono" />
+                +5491162897515
+              </p>
+              <p class="flex-start">
+                <img class="m-r-small" src="img/mail.svg" alt="icono de email" />
+                difatec2017@gmail.com
+              </p>
+            </div>
+            <div class="col-33">
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3274.4318589807876!2d-58.28708878415812!3d-34.84537457783262!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95a32b3aae197e1b%3A0x4635a32b9061ed89!2sDifatec!5e0!3m2!1ses-419!2sar!4v1676402539227!5m2!1ses-419!2sar"
+                width="100%"
+                height="100%"
+                style="border: 0"
+                allowfullscreen=""
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+                width="100%"
+                height="100%"
+                style="border: 0"
+                allowfullscreen=""
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+              ></iframe>
+            </div>
+            <div class="col-33">
+              <div class="flex-around">
+                <img class="rrss" src="img/facebook.png" alt="icono de facebook" />
+                <img class="rrss" src="img/twitter.png" alt="icono de twitter" />
+                <img class="rrss" src="img/whatsapp.png" alt="icono de whatsapp" />
+                <img class="rrss" src="img/instagram.png" alt="icono de insgr" />
+              </div>
+              <div class="flex-around m-t">
+                <a href="contacto.html#aviso">Aviso legal</a>
+                <a href="contacto.html#cookies">Política de Cookies</a>
+              </div>
+              <p class="copyright m-t">Copyright &copy; 2023 SDeveloperZ</p>
+            </div>
+    </footer>
+</body>
+</html>
