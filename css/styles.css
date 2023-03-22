@@ -18,6 +18,7 @@ body {
   background-repeat: no-repeat;
   font-size: 16px;
   font-family: "Avenir", sans-serif;
+  min-height: 100vh;
 }
 
 /* logo  */
@@ -156,6 +157,19 @@ nav ul li ul li:hover .sub-menu2 {
   scroll-behavior: smooth;
   display: flex;
   padding: 2rem 1rem;
+}
+
+.botton {
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 2rem 1rem;
+  display: flex;
+}
+
+.site-content {
+  background-color: white;
+  min-height: 55vh;
 }
 
 .fila::-webkit-scrollbar {
@@ -326,11 +340,13 @@ p {
 footer {
   background-color: #222;
   color: white;
-  padding: 10px 0;
+  width: 100%;
 }
+
 .col-33 {
   width: 33.33333%;
   padding: 0.5rem 1rem;
+  align-items: center;
 }
 
 .col-66 {
@@ -403,7 +419,6 @@ footer .copyright {
 /* Formulario contacto */
 
 .fila.contacto {
-  margin-top: 30px;
   flex-direction: column;
   align-items: center;
 }
@@ -498,8 +513,7 @@ input[type="checkbox"]:checked + label::before {
 /* quienes somos */
 
 #quienes-somos {
-  background-color: #f5f5f5;
-  padding: 40px;
+  padding: 20px;
 }
 
 #quienes-somos h2 {
